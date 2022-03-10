@@ -21,7 +21,7 @@ void setup ()
       }
     }
     
-    for(int i = 0; i < 15; i++){
+    for(int i = 0; i < 30; i++){
     setMines();
     }
 }
@@ -48,7 +48,6 @@ public boolean isWon()
         if(buttons[r][c].clicked == true || mines.contains(buttons[r][c])){
           count++; 
           if(count == NUM_ROWS * NUM_COLS){
-                     System.out.println("ez");
           return true;
           }
         }
